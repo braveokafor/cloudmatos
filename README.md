@@ -30,6 +30,10 @@ backup-retention-period = 30
 # VM BACKUP
 vm-names                = ["vm"]
 ```
+Then perform the following commands on the directory:
+- `terraform init` to get the plugins.
+- `terraform plan` to see the infrastructure plan.
+- `terraform apply` to apply the infrastructure build.
 
 <br/>
 <h2>At the Resource Group scope:</h2>
@@ -54,6 +58,10 @@ resource-group-location = "East US"
 backup-time             = "02:00"
 backup-retention-period = 30
 ```
+Then perform the following commands on the directory:
+- `terraform init` to get the plugins.
+- `terraform plan` to see the infrastructure plan.
+- `terraform apply` to apply the infrastructure build.
 
 <br/>
 <h2>At the Subscription scope:</h2>
@@ -78,4 +86,9 @@ resource-group-location = "East US"
 backup-time             = "02:00"
 backup-retention-period = 30
 ```
+Then perform the following commands on the directory:
+- `terraform init` to get the plugins.
+- `terraform plan` to see the infrastructure plan.
+- `terraform apply` to apply the infrastructure build.
+
 </p>
