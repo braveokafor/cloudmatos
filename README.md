@@ -17,12 +17,8 @@
 
 #### 🛠 Usage
 - Navigate to the `./vm-backup-vm-scope` directory. 
-- Edit the `resource-group-name`, `resource-group-location` and `vm-names` variables in the `terraform.tfvars`
+- Edit the `resource-group-name`, `resource-group-location` and `vm-names` variables in the `terraform.tfvars`.
 ```hcl
-# GENERAL/ TAGS
-environment = "staging"
-maintainer  = "Brave Okafor <okaforbrave@gmail.com>"
-
 # RESOURCE GROUP
 resource-group-name     = "test-security-policies-rg"
 resource-group-location = "East US" #"Germany West Central" # 
@@ -46,6 +42,17 @@ vm-names                = ["vm"]
 | [Remediates](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) non-compliant VM's (i.e: Configures VM Backups).                                                                                        | `./vm-backup-policy-resource-group-scope/policy-rg.tf`      |
 
 #### 🛠 Usage
+- Navigate to the `./vm-backup-policy-resource-group-scope` directory. 
+- Edit the `resource-group-name` and `resource-group-location` variables in the `terraform.tfvars`.
+```hcl
+# RESOURCE GROUP
+resource-group-name     = "test-security-policies-rg"
+resource-group-location = "East US"
+
+# VM BACKUP
+backup-time             = "02:00"
+backup-retention-period = 30
+```
 
 <h2>At the Subscription scope:</h2>
 
@@ -58,5 +65,16 @@ vm-names                = ["vm"]
 | [Remediates](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) non-compliant VM's (i.e: Configures VM Backups).                                                                                        | `./vm-backup-policy-subscription-scope/policy-subscription.tf` |
 
 #### 🛠 Usage
+- Navigate to the `./vm-backup-policy-subscription-scope` directory. 
+- Edit the `resource-group-name` and `resource-group-location` variables in the `terraform.tfvars`.
+```hcl
+# RESOURCE GROUP
+resource-group-name     = "test-security-policies-rg"
+resource-group-location = "East US"
+
+# VM BACKUP
+backup-time             = "02:00"
+backup-retention-period = 30
+```
 
 </p>
