@@ -9,7 +9,7 @@
 
 <br/>
 <p>
-<h1>At the VM scope:</h1>
+<h2>At the VM scope:</h2>
 
 - Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
 - Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy). 
