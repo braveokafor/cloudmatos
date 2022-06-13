@@ -7,20 +7,15 @@
 
 ## <p align="center">⚡️ How it Works</p>
 
-<br/>
 <p>
-<h3>At the VM scope:</h3>
+<h2>At the VM scope:</h2>
 
 - Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
 - Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy). 
 - Imports a list of VM names (set in terraform.tfvars). 
 - Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM. 
 
-</p>
-<br/>
-
-<p>
-<b>At the Resource Group scope:</b>
+<h2>At the Resource Group scope:</h2>
 
 - Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
 - Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy). 
@@ -28,11 +23,7 @@
 - [Assigns](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/assignment-structure) the "VM Backup" Policy to the Resource Group. 
 - [Remediates](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) non-compliant VM's (i.e: Configures VM Backups). 
 
-</p>
-<br/>
-
-<p>
-<b>At the Subscription scope:</b>
+<h2>At the Subscription scope:</h2>
 
 - Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
 - Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy). 
@@ -41,6 +32,3 @@
 - [Remediates](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) non-compliant VM's (i.e: Configures VM Backups). 
 
 </p>
-
-<br/>
-<hr/>
