@@ -1,9 +1,7 @@
 <h1 align="center">
   Configure Azure VM Backups
 </h1>
-<p align="center">These scripts setup Azure VM Backups at different resouce scopes.</p>
-
-<br/>
+<h2 align="center">These scripts setup Azure VM Backups at different resouce scopes.</h2>
 
 ## <p align="center">⚡️ How it Works</p>
 
