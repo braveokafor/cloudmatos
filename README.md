@@ -16,8 +16,10 @@
 - Imports a list of VM names (set in terraform.tfvars). 
 - Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM. 
 
+</p>
 <br/>
 
+<p>
 <b>At the Resource Group scope:</b>
 
 - Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
@@ -26,8 +28,10 @@
 - [Assigns](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/assignment-structure) the "VM Backup" Policy to the Resource Group. 
 - [Remediates](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) non-compliant VM's (i.e: Configures VM Backups). 
 
+</p>
 <br/>
 
+<p>
 <b>At the Subscription scope:</b>
 
 - Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
