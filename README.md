@@ -15,7 +15,7 @@
 | Imports a list of VM's                                                                                                               |`./vm-backup-vm-scope/terraform.tfvars` |
 | Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM   |`./vm-backup-vm-scope/backups.tf`       |
 
-### 🛠 Usage
+#### 🛠 Usage
 
 <h2>At the Resource Group scope:</h2>
 
