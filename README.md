@@ -16,6 +16,24 @@
 | Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM   |`./vm-backup-vm-scope/backups.tf`       |
 
 #### 🛠 Usage
+- Navigate to the `./vm-backup-vm-scope` directory. 
+- Edit the `resource-group-name`, `resource-group-location` and `vm-names` variables in the `terraform.tfvars`
+```hcl
+# GENERAL/ TAGS
+environment = "staging"
+maintainer  = "Brave Okafor <okaforbrave@gmail.com>"
+
+# RESOURCE GROUP
+resource-group-name     = "test-security-policies-rg"
+resource-group-location = "East US" #"Germany West Central" # 
+
+# RECOVERY VAULT
+backup-time             = "02:00"
+backup-retention-period = 30
+
+# VM BACKUP
+vm-names                = ["vm"]
+```
 
 <h2>At the Resource Group scope:</h2>
 
