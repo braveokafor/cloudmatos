@@ -1,14 +1,14 @@
 <h1 align="center">
   Configure Azure VM Backups
 </h1>
-<h2 align="center">These scripts setup Azure VM Backups at different resouce scopes.</h2>
+<h3 align="center">These scripts setup Azure VM Backups at different resouce scopes.</h3>
 
 ## <p align="center">⚡️ How it Works</p>
 
 <p>
 <h2>At the VM scope:</h2>
 
-- Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview). 
+- Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview) `./vm backup (vm id)/recovery-vault.tf`. 
 - Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy). 
 - Imports a list of VM names (set in terraform.tfvars). 
 - Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM. 
