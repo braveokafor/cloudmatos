@@ -31,6 +31,7 @@ backup-retention-period = 30
 vm-names                = ["vm"]
 ```
 
+<br/>
 <h2>At the Resource Group scope:</h2>
 
 |                                                       Action                                                                                                                                                                              |                           tf file                           |
@@ -54,6 +55,7 @@ backup-time             = "02:00"
 backup-retention-period = 30
 ```
 
+<br/>
 <h2>At the Subscription scope:</h2>
 
 |                                                       Action                                                                                                                                                                              |                                tf file                         |
@@ -76,5 +78,4 @@ resource-group-location = "East US"
 backup-time             = "02:00"
 backup-retention-period = 30
 ```
-
 </p>
