@@ -8,10 +8,10 @@
 <p>
 <h2>At the VM scope:</h2>
 
-- Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview) `./vm backup (vm id)/recovery-vault.tf`. 
-- Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy). 
-- Imports a list of VM names (set in terraform.tfvars). 
-- Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM. 
+- Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview) `./vm-backup-vm-scope/recovery-vault.tf`. 
+- Creates a [Recovery Vault Policy](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#create-a-custom-policy) `./vm-backup-vm-scope/recovery-vault.tf`. 
+- Imports a list of VM's `./vm-backup-vm-scope/terraform.tfvars`. 
+- Configures [Backups](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare#apply-a-backup-policy) for each VM `./vm-backup-vm-scope/backups.tf`. 
 
 <h2>At the Resource Group scope:</h2>
 
