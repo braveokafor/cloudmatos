@@ -7,6 +7,7 @@
 
 <p>
 <h2>At the VM scope:</h2>
+
 |                                                             Action                                                                   |               tf file                  |
 |--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
 | Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview)              |`./vm-backup-vm-scope/recovery-vault.tf`| 
@@ -16,6 +17,7 @@
 
 
 <h2>At the Resource Group scope:</h2>
+
 |                                                       Action                                                                                                                                                                              |                           tf file                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview).                                                                                                                  | `./vm-backup-policy-resource-group-scope/recovery-vault.tf` |
@@ -25,6 +27,7 @@
 | [Remediates](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) non-compliant VM's (i.e: Configures VM Backups).                                                                                        | `./vm-backup-policy-resource-group-scope/policy-rg.tf`      |
 
 <h2>At the Subscription scope:</h2>
+
 |                                                       Action                                                                                                                                                                              |                                tf file                         |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | Creates a [Recovery Vault](https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview).                                                                                                                  | `./vm-backup-policy-subscription-scope/recovery-vault.tf`      |
